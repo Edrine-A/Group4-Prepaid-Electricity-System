@@ -15,5 +15,5 @@ A secure, menu-driven C programming system designed for the management of prepai
 - **Presentation**: .
 
 ## How to Run
-1. Compile the code: `gcc -o main.c functions.c`
+1. Compile the code: `gcc -o main.c`
 2. Execute the system: `./main`
