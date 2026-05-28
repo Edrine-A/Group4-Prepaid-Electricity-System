@@ -18,7 +18,7 @@ typedef struct {
     float remaining_units;
 } Customer;
 
-Customer customers[MAX_CUSTOMERS];
+Customer customers[MAX_CUSTOMERS]; // Array to store customer information
 int customerCount = 0;//Enables us to count the number of customers we have registerd
         //User definied Functions to make the main function clean
 // A simple verification system for only the administrators to access
@@ -43,7 +43,7 @@ int customerCount = 0;//Enables us to count the number of customers we have regi
 }
 */ //since the code is to be marked we have opted to remove this code to enable our lecturer to successfully run the program
 
-int findCustomerByMeter(int meter) {
+int findCustomerByMeter(int meter) { //function to find a customer by their meter number and return the index in the array
     for(int i = 0; i < customerCount; i++) {
         if (customers[i].meter_number == meter) {
             return i;
@@ -52,9 +52,9 @@ int findCustomerByMeter(int meter) {
     return -1; //for an error if the customer is not found
 }
 //function to display customers details
-void displayCustomer(int index) {
+void displayCustomer(int index) {   
     printf("\n--- CUSTOMER DETAILS ---\n");
-    printf("Name          : %s\n", customers[index].name);
+    printf("Name          : %s\n", customers[index].name);  
     printf("Meter Number  : %d\n", customers[index].meter_number);
     printf("Phone         : %d\n", customers[index].phone_number);
     printf("Category      : %s\n", 
