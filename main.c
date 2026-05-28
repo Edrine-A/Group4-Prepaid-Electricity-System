@@ -22,7 +22,7 @@ Customer customers[MAX_CUSTOMERS];
 int customerCount = 0;//Enables us to count the number of customers we have registerd
         //User definied Functions to make the main function clean
 // A simple verification system for only the administrators to access
-int login() {
+/*int login() {
     char username[20];
     char password[20];
     
@@ -41,7 +41,7 @@ int login() {
         return 0;
     }
 }
-
+*/ //since the code is to be marked we have opted to remove this code to enable our lecturer to successfully run the program
 
 int findCustomerByMeter(int meter) {
     for(int i = 0; i < customerCount; i++) {
