@@ -274,4 +274,3 @@ int main() {
     return 0;
 }
 // we couldn't find a way of storing data after the program terminates
-main
