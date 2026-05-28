@@ -239,9 +239,9 @@ void checkUnits() {
 //main function to run the program
 int main() {
     
-    if (!login()) {
+   /* if (!login()) {
         return 0;
-    }
+    } */
 //loop to display the main menu and handle user choices to run continuously until the user decides to exit
     while (1) {
     //main menu to select from
