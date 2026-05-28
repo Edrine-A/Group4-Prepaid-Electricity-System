@@ -4,7 +4,7 @@
 A secure, menu-driven C programming system designed for the management of prepaid electricity tokens.
 
 ## Features
-- Secure user authentication using a simple login function.
+- Secure user authentication using a simple login function. (this code has been attached as a comment to enable our lecturer run the program with no need of a passkey)
 - Record management: Add, Search, Delete, update and Display tokens.
 - Validation logic for token generation and usage.
 - calculations for units and errors that maybe encountered
