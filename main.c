@@ -13,7 +13,7 @@
 typedef struct {
     char name[30];
     int meter_number;
-    int phone_number;
+    long phone_number;
     int category;        // 1 = Domestic, 2 = Commercial, 3 = Industrial
     float remaining_units;
 } Customer;
@@ -72,7 +72,7 @@ void registerCustomer() {
 
     printf("\n--- REGISTER NEW CUSTOMER ---\n");
     printf("Enter name: ");
-    scanf(" %29[^\n]", customers[customerCount].name);
+    scanf(" %29[^\n]", customers[customerCount].name); //[^\n] read everthing besides the new line
 
     printf("Enter meter number: ");
     scanf("%d", &customers[customerCount].meter_number);
@@ -84,7 +84,7 @@ void registerCustomer() {
     }
 
     printf("Enter phone number: ");
-    scanf("%d", &customers[customerCount].phone_number);
+    scanf("%ld", &customers[customerCount].phone_number);
 
     printf("Enter category (1=Domestic, 2=Commercial, 3=Industrial): ");
     scanf("%d", &customers[customerCount].category);
@@ -274,3 +274,4 @@ int main() {
     return 0;
 }
 // we couldn't find a way of storing data after the program terminates
+main
